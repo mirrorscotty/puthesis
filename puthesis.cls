@@ -1521,21 +1521,21 @@
 \newcommand{\@@appendixname}{Appendix}
 \renewcommand{\appendix}{\par
   \setboolean{@@inappendix}{true}
-  \setcounter{chapter}{0}%
-  \setcounter{section}{0}%
+  %\setcounter{chapter}{0}%
+  %\setcounter{section}{0}%
   \coversheet{\uppercase\expandafter{\@@appendixname}}
   \renewcommand{\@chapapp}{\appendixname}%
   \renewcommand{\thechapter}{\Alph{chapter}}
 }
 \newcommand{\@@appendicesname}{Appendices}
-\newcommand{\appendices}{\par
-  \setboolean{@@inappendix}{true}
-  \setcounter{chapter}{0}%
-  \setcounter{section}{0}%
-  \coversheet{\uppercase\expandafter{\@@appendicesname}}
-  \renewcommand{\@chapapp}{\appendixname}%
-  \renewcommand{\thechapter}{\Alph{chapter}}
-}
+%\newcommand{\appendices}{\par
+%  \setboolean{@@inappendix}{true}
+%  %\setcounter{chapter}{0}%
+%  %\setcounter{section}{0}%
+%  \coversheet{\uppercase\expandafter{\@@appendicesname}}
+%  \renewcommand{\@chapapp}{\appendixname}%
+%  \renewcommand{\thechapter}{\Alph{chapter}}
+%}
 \newcommand{\@@vitaname}{VITA}
 \newenvironment{vita}
   {
@@ -1552,7 +1552,7 @@
     \global\@nobreakfalse
   \endgroup
 }
-\newcommand{\num}[1]{\ensuremath{#1}}
+%\newcommand{\num}[1]{\ensuremath{#1}}
 \newcommand{\ten}[1]{\ensuremath{{}\cdot 10^{#1}}}
 
 \setcounter{topnumber}{10}
