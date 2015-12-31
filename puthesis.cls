@@ -119,6 +119,7 @@
 \newcommand{\set@@optionbibstyle}[1]{\renewcommand{\@@optionbibstyle}{#1}\addtocounter{@@tcount}{1}}
 \DeclareOption{abbrv}{\set@@optionbibstyle{abbrv}}
 \DeclareOption{abbrvnat}{\set@@optionbibstyle{abbrvnat}}
+\DeclareOption{apalikenat}{\set@@optionbibstyle{apalikenat}}
 \DeclareOption{aer}{\set@@optionbibstyle{aer}}
 \DeclareOption{agsm}{\set@@optionbibstyle{agsm}}
 \DeclareOption{aip}{\set@@optionbibstyle{aip}}
@@ -216,6 +217,7 @@
     \IW{You may specify only one citation/bibliography style from the below list:}
     \IW{++++abbrv}
     \IW{++++abbrvnat}
+    \IW{++++apalikenat}
     \IW{++++agsm}
     \IW{++++aip}
     \IW{++++alpha}
@@ -1351,6 +1353,13 @@
     \usepackage[sort]{natbib}
     \renewcommand{\bibname}{{\normalsize\rm REFERENCES}}
     \bibliographystyle{abbrvnat}
+  }
+
+\ifthen{\equal{apalikenat}{\@@bibstyle}}
+  {
+    \usepackage[sort]{natbib}
+    \renewcommand{\bibname}{{\normalsize\rm REFERENCES}}
+    \bibliographystyle{apalike}
   }
 
 \ifthen{\equal{aer}{\@@bibstyle}}
