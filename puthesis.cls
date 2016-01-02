@@ -1359,7 +1359,7 @@
   {
     \usepackage[sort]{natbib}
     \renewcommand{\bibname}{{\normalsize\rm REFERENCES}}
-    \bibliographystyle{apalike}
+    \bibliographystyle{apalike-url}
   }
 
 \ifthen{\equal{aer}{\@@bibstyle}}
